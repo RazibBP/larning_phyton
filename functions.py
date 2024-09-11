@@ -46,6 +46,7 @@ def reatun(x):
 print(reatun(3))
 print(reatun(5))
 
+
 #function command practice all done 
 
 
@@ -68,3 +69,39 @@ sum = doubl(5)
 ad = doubl(7)
 print(sum(7))
 print(ad(7))
+
+#function statmenr
+def double(x):
+    print(x*2)
+
+double(2)
+double(100)
+
+def new_double(x ,y):
+    z = x + y
+    print(z)
+new_double(2,3)
+new_double(4,5)
+
+def make(*args):
+    sum = 0
+    for num in args: # Here, args is like a Tuple which is (10, 20, 30, 40)
+        sum += num
+    return sum
+
+print(make(10, 20, 30, 40))
+
+def make(*args):
+    sum = 0
+    for num in args:
+        sum += num
+    return sum
+    
+print(make(10,20,30,40))
+
+def add_numbers(x, y):
+    total = x + y
+    return total
+print("This won't be printed")
+large = (add_numbers(4, 5))
+print(large)

@@ -23,30 +23,31 @@ class user():
     name = ''
     email = ''
     password = ''
-    login = False
+    is_login = False
 
     def login(self):
         email = input ("Enter your Email :")
-        password = input("Enter your password : ")
+        password =int( input("Enter your password : "))
 
-        if email == self.email or password == self.password:
-            login = True
+        if  email == self.email  and password == self.password:
+            is_login = True
             print("Login successful")
         else:
             print("Login faild")
 
     def log(self):
-        login = False
+        is_login = False
         print("Log out ")
 
-    def inlogin(self):
-        if self.login:
+    def hasLogin(self):
+        if self.is_login:
             return True
         else:
             return False
     
     def profile(self):
-        if self.inlogin():
+        print(self.hasLogin())
+        if self.hasLogin():
             print(self.name, "-" ,self.email)
         else:
             print("user is not log in ")
@@ -57,6 +58,23 @@ user1.email = "mdrazib.dev@gmail.com"
 user1.password = 12345
 
 user1.login()
+user.inlogin()
 user1.profile()
 
     
+class person():
+    name = ""
+    age = ""
+
+p1 =  person()
+p1.name = "Johan"
+p1.age = 36
+
+print(f"Name: {p1.name}")
+print(f"Ago :{p1.age}")
+
+def some(x = 0):
+    return x
+
+print(some(20))
+
