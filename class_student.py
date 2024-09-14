@@ -13,9 +13,16 @@ class student:
         #print("Id: ",self.Id,"Name: ",self.name)
         #print("Total student: ",student.count)
 
-    @classmethod
+    @classmethod            #classmathod class under variable chanage
     def up_new_name(cls,u_new_name):
         cls.univarcity = u_new_name
+
+    @staticmethod
+    def departmant(id):
+        if id[3:5] == "01":
+            print("CSE")
+        elif id[3:5] == "41":
+            print("SE")
 
 
 #==========================================================
@@ -29,4 +36,4 @@ s1.detailscd()
 s2.detailscd()
 s3.detailscd()
 s4.detailscd()
-
+student.departmant("15001007")
