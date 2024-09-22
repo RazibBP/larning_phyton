@@ -11,3 +11,9 @@ import datetime
 mytime = datetime.datetime.now()
 print(mytime.date())
 print(mytime.time())
+
+import math
+
+print(math.pow(2,3))
+print(math.e)
+print(math.pi)
