@@ -1,8 +1,8 @@
 import mysql.connector
 import json
 
-with open ("data.json") as jason:
-    data = json.load(jason)
+#with open ("data.json") as jason:
+   # data = json.load(jason)
 
 
 mydb = mysql.connector.connect(
