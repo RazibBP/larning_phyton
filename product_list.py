@@ -1,8 +1,8 @@
-#import mysql.connector
+import mysql.connector
 
-#import json
-#with open ('data.json') as f:
-  #  data = json.load(f)
+import json
+with open ('data.json') as f:
+    data = json.load(f)
 
 mydb = mysql.connector.Connect(
     host="localhost",
