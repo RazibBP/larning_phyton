@@ -55,11 +55,11 @@ mycursor = mydb.cursor()
 #mydb.commit()
 #print(mycursor.rowcount,"row count")
 
-sql = "SELECT products.title,products.category,products.sku, order_LIST.orderID FROM products INNER JOIN order_LIST ON products.id = order_LIST.p_ID ORDER BY products.category ; "
+#sql = "SELECT products.title,products.category,products.sku, order_LIST.orderID FROM products INNER JOIN order_LIST ON products.id = order_LIST.p_ID ORDER BY products.category ; "
 
-mycursor.execute(sql)
+#mycursor.execute(sql)
 
-myresult = mycursor.fetchall()
+#myresult = mycursor.fetchall()
 
-for x in myresult:
-  print(x)
+#for x in myresult:
+ # print(x)
