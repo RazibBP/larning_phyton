@@ -67,3 +67,4 @@ mycursor.execute(sql)
 result = mycursor.fetchall()
 for x in result:
     print(x)
+
