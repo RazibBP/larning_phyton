@@ -1,9 +1,8 @@
 print("Log In")
 data = input("Enter your youser ID: " )
 gam = input("ENter your gmail account: ")
-class student():
-    
 
+class student():
     def __init__(self,userid,gmail) -> None:
         self.userid = userid
         self.gmail = gmail
