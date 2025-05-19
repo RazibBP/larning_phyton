@@ -3,7 +3,13 @@ console.log("hello world" );
 var x = 4 //var variable
 var y = 7
 var z = x + y 
+console.log(z);
 
-let x = 7 //same valou don't accapt let variable
-// let x = 11
+careNAME = "CARVO"
+var careNAME
+console.log(careNAME);
 
+CareName = "calvin"
+
+let CareName
+console.log(CareName);
